@@ -11,7 +11,7 @@ library(here)
 library(tidyverse)
 ```
 
-This function is going to fine the mean value of each column, and then return the lowest and highest mean value calculated (in that order)
+This function is going to find the mean value of each column, and then return the lowest and highest mean value calculated (in that order)
 Expectations:
 - the output should be numeric
 - output should be a vector of length 2
@@ -37,7 +37,10 @@ Write some unit tests
 #test that the output is of length 2
 expect_length(mean_range(df = mtcars),2)
 
+#test that first value is less than second
 
+expect_true(mean_range(mtcars)[1]<mean_range(mtcars)[2])
 ```
+
 
 
