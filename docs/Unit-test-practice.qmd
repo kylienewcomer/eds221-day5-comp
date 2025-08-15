@@ -54,4 +54,14 @@ source(here::here("src", "food_cart_function.R"))
 name_cart("Pickle", "Penguin")
 ```
 
+```{r}
+source(here::here("src", "cork_oak_growth.R"))
+
+#call function
+height_t2(3, 1, 5)
+```
+```{r}
+
+
+```
 
